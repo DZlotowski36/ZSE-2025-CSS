@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            p {
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Wewnętrzny arkusz stylów</h1>
+
+        <ol>
+          
+            <li>
+                <h2>1. Gdzie jest wstawiany wewnętrzny arkusz stylów?</h2>
+                <p>Wewnętrzny arkusz stylów jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML, 
+                pomiędzy znacznikami <code>&lt;style&gt;</code> i <code>&lt;/style&gt;</code>. 
+                Wszystkie definicje stylów znajdują się wewnątrz tych znaczników.</p>
+            </li>
+
+        
+            <li>
+                <h2>2. Składnia teoretyczna (w ramce, konieczne wcięcia)</h2>
+                <table border="1" width="80%" align="center">
+                    <tr>
+                        <td>
+                            &lt;head&gt;<br>
+                            &emsp;&emsp;&lt;style type="text/css"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;selektor1 { cecha: wartość; }<br>
+                            &emsp;&emsp;&emsp;&emsp;selektor2 { cecha2: wartość2; }<br>
+                            &emsp;&emsp;&lt;/style&gt;<br>
+                            &lt;/head&gt;
+                        </td>
+                    </tr>
+                </table>
+            </li>
+
+    
+            <li>
+                <h2>3. Jakie mogą być selektory?</h2>
+                <p>Selektorami w wewnętrznym arkuszu stylów mogą być różne elementy HTML, takie jak:<br>
+                <ul>
+                    <li><code>&lt;p&gt;</code> - akapit</li>
+                    <li><code>&lt;h1&gt;</code> - nagłówek poziomu 1</li>
+                    <li><code>&lt;div&gt;</code> - kontener blokowy</li>
+                    <li><code>&lt;span&gt;</code> - element inline</li>
+                    <li><code>.klasa</code> - selektor klasy</li>
+                    <li><code>#identyfikator</code> - selektor identyfikatora</li>
+                </ul>
+                Selektory określają, do jakich elementów HTML zastosowane zostaną style.</p>
+            </li>
+
+   
+            <li>
+                <h2>4. Jakie mogą być cechy i wartości?</h2>
+                <p><b>Cecha</b> to właściwość elementu, którą chcemy zmienić. Przykłady cech to:<br>
+                <ul>
+                    <li><code>color</code> - kolor tekstu</li>
+                    <li><code>background-color</code> - kolor tła</li>
+                    <li><code>font-size</code> - rozmiar czcionki</li>
+                    <li><code>margin</code> - margines</li>
+                </ul>
+                <b>Wartości</b> to konkretne ustawienia dla cech. Przykłady wartości to:<br>
+                <ul>
+                    <li><code>red</code>, <code>#FF0000</code> - dla <code>color</code></li>
+                    <li><code>10px</code>, <code>1em</code> - dla <code>font-size</code></li>
+                    <li><code>0</code>, <code>10px</code> - dla <code>margin</code></li>
+                </ul>
+                Cechy i wartości łączy się w deklaracjach stylów wewnętrznego arkusza stylów, aby określić wygląd elementów.</p>
+            </li>
+
+        </ol>
+    </body>
+</html>
