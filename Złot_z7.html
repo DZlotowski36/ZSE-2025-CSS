@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            p {
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Opis stylu lokalnego, liniowego, linijkowego</h1>
+
+        <ol>
+       
+            <li>
+                <h2>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</h2>
+                <p><b>Styl lokalny</b> pozwala na nadanie formatowania tylko konkretnemu, pojedynczemu elementowi strony. 
+                Jest on dodawany bezpośrednio w kodzie, w tej samej linii, w której znajduje się element formatowany. 
+                Wybór elementu do formatowania jest realizowany za pomocą słowa kluczowego "selektor". 
+                W zależności od selektora, styl będzie zastosowany tylko do tego elementu.</p>
+            </li>
+
+            <li>
+                <h2>2. Składnia teoretyczna (z użyciem ramki otaczającej→ może być tabela o jednej komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak, aby instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki)</h2>
+                <table border="1" width="80%" align="center">
+                    <tr>
+                        <td>
+                            &lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
+                        </td>
+                    </tr>
+                </table>
+                <p>lub inaczej:</p>
+                <table border="1" width="80%" align="center">
+                    <tr>
+                        <td>
+                            &lt;selektor style="nasze style"&gt;treść bloku&lt;/selektor&gt;
+                        </td>
+                    </tr>
+                </table>
+            </li>
+
+
+            <li>
+                <h2>3. Co może być selektorem?</h2>
+                <p><b>Selektorem</b> może być praktycznie każdy element HTML, np. znacznik akapitu <code>&lt;p&gt;</code>, nagłówka <code>&lt;h1&gt;</code>, komórki tabeli <code>&lt;td&gt;</code>, i wiele innych. Selektor określa, do jakiego elementu HTML zostaną przypisane konkretne style.</p>
+            </li>
+
+            <li>
+                <h2>4. Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</h2>
+                <p><b>"Cechą"</b> (czyli właściwością lub atrybutem) jest element, który chcemy zmienić w danym elemencie HTML, np. kolor tekstu <code>color</code> lub wielkość czcionki <code>font-size</code>. W jednej deklaracji stylu można wpisać więcej niż jedną cechę, a cechy są oddzielane średnikami <code>;</code>.</p>
+            </li>
+
+
+            <li>
+                <h2>5. Co wpisujemy jako "wartość" (w deklaracji stylu)?</h2>
+                <p><b>"Wartość"</b> to konkretna wartość przypisana do cechy. Na przykład, dla cechy <code>color</code> wartością może być <code>red</code>, <code>blue</code> lub <code>#31F4A5</code>. Wartość zależy od tego, jakiego typu jest cecha (np. tekst, kolor, rozmiar).</p>
+            </li>
+
+        </ol>
+    </body>
+</html>
