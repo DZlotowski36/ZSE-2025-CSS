@@ -1,57 +1,28 @@
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    </head>
-    <body>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Formatowanie w HTML i CSS</title>
+</head>
+<body>
 
-        <h1>Opis stylu lokalnego, liniowego, linijkowego</h1>
+    <h1><u>Opis styl lokalny, liniowy, linijkowy.</u> </h1>
+    <ol>
+        <li><h1><b>Na co pozwala styl lokalny, który element będzie formatowany z jego pomocą?</b></h1>
+            <p>Styl lokalny umożliwia zastosowanie formatowania do pojedynczego elementu na stronie, a jego użycie zależy od wybranego selektora.</p>
+        </li>
+        <li><h1><b>Jak wygląda składnia teoretyczna stylu lokalnego (np. z użyciem ramki otaczającej)?</b></h1>
+            <p>Składnia stylu lokalnego może obejmować np. tabelę o jednej komórce, w której używamy znaków specjalnych, by wyświetlić definicję stylu bez jego zastosowania. Przykładem takiego "znaku specjalnego" jest &nbsp;, który reprezentuje spację niełamana.</p>
+        </li>
+        <li><h1><b>Co to jest selektor?</b></h1>
+            <p>Selektor w CSS to element HTML, który jest wybierany do zastosowania określonych stylów, np. <code>p</code> (akapit), <code>h1</code> (nagłówek), <code>td</code> (komórka tabeli) i inne.</p>
+        </li>
+        <li><h1><b>Co wpisujemy jako "cechę" i jakie jest znaczenie średników?</b></h1>
+            <p>Cechą w CSS jest konkretny atrybut, który chcemy sformatować, np. kolor tekstu (color). Średnik służy do oddzielania różnych cech selektora.</p>
+        </li>
+        <li><h1><b>Co wpisujemy jako "wartość" w deklaracji stylu?</b></h1>
+            <p>Wartość to dokładny parametr przypisany do cechy, np. dla koloru tekstu może to być "red", "blue" lub wartość szesnastkowa jak "#31F4A5". Wartość zależy od cechy, której dotyczy.</p>
+        </li>
+    </ol>
 
-        <ol>
-       
-            <li>
-                <h2>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</h2>
-                <p><b>Styl lokalny</b> pozwala na nadanie formatowania tylko konkretnemu, pojedynczemu elementowi strony. 
-                Jest on dodawany bezpośrednio w kodzie, w tej samej linii, w której znajduje się element formatowany. 
-                Wybór elementu do formatowania jest realizowany za pomocą słowa kluczowego "selektor". 
-                W zależności od selektora, styl będzie zastosowany tylko do tego elementu.</p>
-            </li>
-
-            <li>
-                <h2>2. Składnia teoretyczna (z użyciem ramki otaczającej→ może być tabela o jednej komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak, aby instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki)</h2>
-                <table border="1" width="80%" align="center">
-                    <tr>
-                        <td>
-                            &lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
-                        </td>
-                    </tr>
-                </table>
-                <p>lub inaczej:</p>
-                <table border="1" width="80%" align="center">
-                    <tr>
-                        <td>
-                            &lt;selektor style="nasze style"&gt;treść bloku&lt;/selektor&gt;
-                        </td>
-                    </tr>
-                </table>
-            </li>
-
-
-            <li>
-                <h2>3. Co może być selektorem?</h2>
-                <p><b>Selektorem</b> może być praktycznie każdy element HTML, np. znacznik akapitu &lt;p&gt;, nagłówka &lt;h1&gt;, komórki tabeli &lt;td&gt;, i wiele innych. Selektor określa, do jakiego elementu HTML zostaną przypisane konkretne style.</p>
-            </li>
-
-            <li>
-                <h2>4. Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</h2>
-                <p><b>"Cechą"</b> (czyli właściwością lub atrybutem) jest element, który chcemy zmienić w danym elemencie HTML, np. kolor tekstu color lub wielkość czcionki font-size. W jednej deklaracji stylu można wpisać więcej niż jedną cechę, a cechy są oddzielane średnikami ;.</p>
-            </li>
-
-
-            <li>
-                <h2>5. Co wpisujemy jako "wartość" (w deklaracji stylu)?</h2>
-                <p><b>"Wartość"</b> to konkretna wartość przypisana do cechy. Na przykład, dla cechy color wartością może być red, blue lub #31F4A5. Wartość zależy od tego, jakiego typu jest cecha (np. tekst, kolor, rozmiar).</p>
-            </li>
-
-        </ol>
-    </body>
+</body>
 </html>
